@@ -4,19 +4,124 @@
 }
 
 body {
-  background-color: beige;
+  background-color: #035E7B;
   font-family: "wotfard";
   text-align: center;
+  color: #EFF1C5;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0 !important;
 }
 
 #content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+
+}
+
+.button {
+  background-color: #EFF1C5;
+  border-radius: 10%;
+  color: #035E7B;
+}
+
+.button:active {
+  background-color: #002E2C;
+  color: #EFF1C5;
 }
 
 img {
   height: 400px;
   width: auto;
+  border-radius: 10%;
+}
+
+
+.menu-items {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: calc(auto-fit, max(250px, 1fr)); */
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  width: 250px;
+  height: 350px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+  border-radius: 10%;
+  background-color: #002E2C;
+  padding: 10px;
+}
+
+.menu-item-picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+
+}
+
+.menu-item-title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.menu-item-desc {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.chef-section {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  align-items: center;
+  text-align: left;
+}
+
+.img-cropper {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-picture {
+  height: auto;
+  width: 100%;
+}
+
+.chef-section > span {
+  background-color: #EFF1C5;
+  color: #002E2C;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.contact-section {
+  margin-top: 180px;
+  width: 50%;
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }

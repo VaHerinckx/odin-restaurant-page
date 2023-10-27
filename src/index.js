@@ -1,4 +1,24 @@
 import './styles.css';
-import generateContent from './generate';
+import generateHomeContent from './home';
+import generateContactContent from './contact';
+import generateMenuContent from './menu';
 
-generateContent()
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("home")) {
+    generateHomeContent()
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("menu")) {
+    generateMenuContent()
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("contact")) {
+    generateContactContent()
+  }
+});
+
+generateHomeContent()
